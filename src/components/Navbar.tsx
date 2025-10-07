@@ -36,7 +36,6 @@ export const Navbar = () => {
               <Link to="/browse" className={linkClass("/browse")}>Browse</Link>
               <Link to="/categories" className={linkClass("/categories")}>Categories</Link>
               <Link to="/compare" className={linkClass("/compare")}>Compare</Link>
-              <Link to="/kayaha-map" className={linkClass("/kayaha-map")}>KAYAHA Map</Link>
               <Link to="/submit" className="px-3 py-1.5 rounded-md bg-primary text-primary-foreground">Submit</Link>
             </nav>
 
