@@ -3168,6 +3168,2156 @@ export const tools: Tool[] = [
     best_for: ["AI companion", "Emotional support", "Mental health", "Personal growth"],
     launch_date: "2017-01-01",
     last_updated: "2024-11-28"
+  },
+  {
+    id: "52",
+    name: "10Web",
+    slug: "10web",
+    logo_url: "/placeholder.svg",
+    company: "10Web",
+    tagline: "AI-powered WordPress website builder and optimization platform",
+    description: "10Web provides AI-assisted WordPress site creation, hosting, and automated optimization for speed, SEO, and security.",
+    category: ["Web Development"],
+    website: "https://10web.io",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 10, billing: "monthly", features: ["Hosting", "AI builder"] },
+        { name: "Pro", price: 24, billing: "monthly", features: ["Optimization", "Backups"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text", "Images"],
+      output_formats: ["Website"]
+    },
+    technical: {
+      model_type: "Proprietary AI",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["WordPress"],
+    ratings: { overall: 4.4, ease_of_use: 4.4, features: 4.4, value: 4.4, support: 4.4, total_reviews: 0 },
+    pros: ["Fast setup", "Performance optimizations"],
+    cons: ["WordPress-focused", "Subscription cost"],
+    best_for: ["WordPress sites"],
+    launch_date: "2020-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "94",
+    name: "Ada",
+    slug: "ada",
+    logo_url: "/placeholder.svg",
+    company: "Ada",
+    tagline: "Enterprise AI customer support automation",
+    description: "Ada delivers automated customer support with AI chat and workflows tailored for enterprise scale and security.",
+    category: ["Customer Support"],
+    website: "https://www.ada.cx",
+    pricing: {
+      model: "Enterprise",
+      free_tier: { available: true, limits: "Demo" },
+      plans: [
+        { name: "Starter", price: 0, billing: "custom", features: ["POC", "Limited seats"] },
+        { name: "Pro", price: 0, billing: "custom", features: ["Enterprise SSO", "Security"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: true,
+      languages_supported: 20,
+      input_types: ["Text"],
+      output_formats: ["Text"]
+    },
+    technical: {
+      model_type: "Proprietary AI",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Enterprise",
+      uptime: "99.9%"
+    },
+    integrations: ["Zendesk", "Salesforce"],
+    ratings: { overall: 4.5, ease_of_use: 4.4, features: 4.6, value: 4.4, support: 4.6, total_reviews: 0 },
+    pros: ["Enterprise-ready", "Robust automations"],
+    cons: ["Custom pricing", "Setup effort"],
+    best_for: ["Enterprise support"],
+    launch_date: "2016-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "92",
+    name: "Akkio",
+    slug: "akkio",
+    logo_url: "/placeholder.svg",
+    company: "Akkio",
+    tagline: "No-code AI for data analytics and forecasting",
+    description: "Akkio enables business teams to build and deploy predictive analytics without code, with fast data connections and dashboards.",
+    category: ["Data Analysis"],
+    website: "https://www.akkio.com",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 50, billing: "monthly", features: ["Core models", "Dashboards"] },
+        { name: "Pro", price: 500, billing: "monthly", features: ["Team seats", "Deployments"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: true,
+      languages_supported: 10,
+      input_types: ["CSV", "Database"],
+      output_formats: ["Charts", "Predictions"]
+    },
+    technical: {
+      model_type: "AutoML",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["BigQuery", "Snowflake"],
+    ratings: { overall: 4.3, ease_of_use: 4.4, features: 4.2, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["No-code", "Fast deploy"],
+    cons: ["Complex use cases need experts"],
+    best_for: ["Business analytics"],
+    launch_date: "2021-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "88",
+    name: "Anthropic Console",
+    slug: "anthropic-console",
+    logo_url: "/placeholder.svg",
+    company: "Anthropic",
+    tagline: "Build and monitor AI apps with Claude APIs",
+    description: "The Anthropic Console provides playgrounds, keys, usage insights, and tooling to develop AI applications using Claude models.",
+    category: ["Developer Tools"],
+    website: "https://console.anthropic.com",
+    pricing: {
+      model: "Pay-as-you-go",
+      free_tier: { available: true, limits: "$5 credit" },
+      plans: [
+        { name: "Pro", price: 15, billing: "per_million_tokens", features: ["Usage-based", "Monitoring"] },
+        { name: "Enterprise", price: 0, billing: "volume", features: ["Discounts", "SLAs"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 50,
+      input_types: ["Text", "JSON"],
+      output_formats: ["Text", "Code"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["SDK", "CLI"],
+    ratings: { overall: 4.7, ease_of_use: 4.6, features: 4.7, value: 4.7, support: 4.7, total_reviews: 0 },
+    pros: ["Great UX", "Rich analytics"],
+    cons: ["Token costs vary"],
+    best_for: ["AI applications"],
+    launch_date: "2023-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "87",
+    name: "Bing Image Creator",
+    slug: "bing-image-creator",
+    logo_url: "/placeholder.svg",
+    company: "Microsoft",
+    tagline: "Free AI image generation with DALL·E",
+    description: "Bing Image Creator generates images from text prompts with a free tier and fast creation.",
+    category: ["Image Generation"],
+    website: "https://www.bing.com/images/create",
+    pricing: {
+      model: "Free",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 0, billing: "monthly", features: ["Free boosts"] },
+        { name: "Pro", price: 0, billing: "monthly", features: ["N/A"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 40,
+      input_types: ["Text"],
+      output_formats: ["Images"]
+    },
+    technical: {
+      model_type: "Diffusion",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["Microsoft Edge"],
+    ratings: { overall: 4.2, ease_of_use: 4.3, features: 4.1, value: 4.4, support: 4.0, total_reviews: 0 },
+    pros: ["Free tier", "Easy to use"],
+    cons: ["Limited controls", "Quality varies"],
+    best_for: ["Free images"],
+    launch_date: "2023-03-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "79",
+    name: "Brandmark",
+    slug: "brandmark",
+    logo_url: "/placeholder.svg",
+    company: "Brandmark",
+    tagline: "AI logo maker and branding kit",
+    description: "Brandmark creates unique logos and brand kits with AI, offering previews before purchase.",
+    category: ["Branding"],
+    website: "https://brandmark.io",
+    pricing: {
+      model: "Pay-per-project",
+      free_tier: { available: true, limits: "Preview" },
+      plans: [
+        { name: "Starter", price: 25, billing: "once", features: ["Logo files"] },
+        { name: "Pro", price: 175, billing: "once", features: ["Brand kit", "Social assets"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 1,
+      input_types: ["Text"],
+      output_formats: ["Images", "SVG"]
+    },
+    technical: {
+      model_type: "Generative",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.4, ease_of_use: 4.5, features: 4.2, value: 4.4, support: 4.3, total_reviews: 0 },
+    pros: ["Quick logos", "Brand kit"],
+    cons: ["Template feel"],
+    best_for: ["Logo generation"],
+    launch_date: "2017-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "99",
+    name: "Claude Code",
+    slug: "claude-code",
+    logo_url: "/placeholder.svg",
+    company: "Anthropic",
+    tagline: "Claude-powered coding in your terminal",
+    description: "Claude Code assists with coding in the terminal and editors, offering AI pair programming and CLI integration.",
+    category: ["Code Assistant"],
+    website: "https://www.anthropic.com/claude-code",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 20, billing: "monthly", features: ["Claude Pro", "Editor integration"] },
+        { name: "Pro", price: 20, billing: "monthly", features: ["Same as Starter"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 30,
+      input_types: ["Code", "Text"],
+      output_formats: ["Code", "Text"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["CLI", "VS Code"],
+    ratings: { overall: 4.7, ease_of_use: 4.6, features: 4.7, value: 4.6, support: 4.7, total_reviews: 0 },
+    pros: ["Strong reasoning", "Great CLI"],
+    cons: ["Requires subscription for best"],
+    best_for: ["Terminal coding"],
+    launch_date: "2024-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "60",
+    name: "Cleanup.pictures",
+    slug: "cleanup-pictures",
+    logo_url: "/placeholder.svg",
+    company: "Cleanup",
+    tagline: "Remove unwanted objects from photos with AI",
+    description: "Cleanup.pictures lets you erase people, text, and objects from photos quickly with AI inpainting.",
+    category: ["Image Editing"],
+    website: "https://cleanup.pictures",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 5, billing: "monthly", features: ["HD export"] },
+        { name: "Pro", price: 72, billing: "yearly", features: ["Batch", "No watermark"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Images"],
+      output_formats: ["Images"]
+    },
+    technical: {
+      model_type: "Inpainting",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["API"],
+    ratings: { overall: 4.5, ease_of_use: 4.6, features: 4.4, value: 4.5, support: 4.3, total_reviews: 0 },
+    pros: ["Very easy", "Good results"],
+    cons: ["Free exports limited"],
+    best_for: ["Photo cleanup"],
+    launch_date: "2021-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "78",
+    name: "Designs.ai",
+    slug: "designs-ai",
+    logo_url: "/placeholder.svg",
+    company: "Inmagine",
+    tagline: "All-in-one design suite powered by AI",
+    description: "Designs.ai offers tools for logos, videos, voiceovers, and copywriting in one subscription.",
+    category: ["Design Suite"],
+    website: "https://designs.ai",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 29, billing: "monthly", features: ["Core tools"] },
+        { name: "Pro", price: 69, billing: "monthly", features: ["Unlimited exports"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text", "Images", "Video"],
+      output_formats: ["Images", "Video", "Audio"]
+    },
+    technical: {
+      model_type: "Generative",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.3, ease_of_use: 4.3, features: 4.2, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["Many tools", "Good value"],
+    cons: ["Learning curve"],
+    best_for: ["All-in-one design"],
+    launch_date: "2019-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "95",
+    name: "Drift",
+    slug: "drift",
+    logo_url: "/placeholder.svg",
+    company: "Drift",
+    tagline: "Revenue acceleration with chat and AI",
+    description: "Drift offers AI chatbots and live chat for marketing and sales, integrated with CRM and ABM.",
+    category: ["Chatbot & Sales"],
+    website: "https://www.drift.com",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Limited" },
+      plans: [
+        { name: "Starter", price: 2500, billing: "monthly", features: ["Core chat"] },
+        { name: "Pro", price: 0, billing: "custom", features: ["Custom"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 20,
+      input_types: ["Text"],
+      output_formats: ["Text"]
+    },
+    technical: {
+      model_type: "Proprietary",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Enterprise",
+      uptime: "99.9%"
+    },
+    integrations: ["Salesforce", "HubSpot"],
+    ratings: { overall: 4.4, ease_of_use: 4.3, features: 4.5, value: 4.1, support: 4.5, total_reviews: 0 },
+    pros: ["Strong CRM integrations"],
+    cons: ["Expensive"],
+    best_for: ["Sales chatbots"],
+    launch_date: "2015-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "66",
+    name: "Fliki",
+    slug: "fliki",
+    logo_url: "/placeholder.svg",
+    company: "Fliki",
+    tagline: "Text to video with AI voices",
+    description: "Fliki turns scripts into videos with AI voices, stock media, and captions.",
+    category: ["Video Generation"],
+    website: "https://fliki.ai",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 28, billing: "monthly", features: ["Basic minutes"] },
+        { name: "Pro", price: 88, billing: "monthly", features: ["More minutes", "HD"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 75,
+      input_types: ["Text", "Images", "Audio"],
+      output_formats: ["Video", "Audio"]
+    },
+    technical: {
+      model_type: "TTS + Video",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.4, ease_of_use: 4.5, features: 4.3, value: 4.4, support: 4.3, total_reviews: 0 },
+    pros: ["Great voices"],
+    cons: ["Branding on free"],
+    best_for: ["Text to video"],
+    launch_date: "2022-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "51",
+    name: "Framer AI",
+    slug: "framer-ai",
+    logo_url: "/placeholder.svg",
+    company: "Framer",
+    tagline: "AI website generation in Framer",
+    description: "Framer AI creates and edits websites with prompts, enabling quick site drafts and publishing.",
+    category: ["Web Development"],
+    website: "https://www.framer.com/ai",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 5, billing: "monthly", features: ["Per site"] },
+        { name: "Pro", price: 15, billing: "monthly", features: ["Advanced"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Website"]
+    },
+    technical: {
+      model_type: "Generative",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["Framer"],
+    ratings: { overall: 4.5, ease_of_use: 4.6, features: 4.4, value: 4.5, support: 4.3, total_reviews: 0 },
+    pros: ["Fast sites"],
+    cons: ["Limited control"],
+    best_for: ["Quick websites"],
+    launch_date: "2023-06-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "74",
+    name: "Frase",
+    slug: "frase",
+    logo_url: "/placeholder.svg",
+    company: "Frase",
+    tagline: "Research and write SEO content briefs",
+    description: "Frase helps plan and draft SEO content with SERP analysis and topic clustering.",
+    category: ["SEO"],
+    website: "https://www.frase.io",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 15, billing: "monthly", features: ["Basic brief"] },
+        { name: "Pro", price: 45, billing: "monthly", features: ["Teams"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Text", "CSV"]
+    },
+    technical: {
+      model_type: "NLP",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["Google Docs"],
+    ratings: { overall: 4.4, ease_of_use: 4.4, features: 4.4, value: 4.4, support: 4.3, total_reviews: 0 },
+    pros: ["Solid SERP data"],
+    cons: ["Credits model"],
+    best_for: ["SEO briefs"],
+    launch_date: "2018-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "77",
+    name: "GPTZero",
+    slug: "gptzero",
+    logo_url: "/placeholder.svg",
+    company: "GPTZero",
+    tagline: "AI content detection for education and publishers",
+    description: "GPTZero detects AI-written text with models tuned for academic and enterprise use.",
+    category: ["Content Detection"],
+    website: "https://gptzero.me",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 10, billing: "monthly", features: ["Basic quota"] },
+        { name: "Pro", price: 25, billing: "monthly", features: ["Higher quota", "API"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 5,
+      input_types: ["Text"],
+      output_formats: ["JSON", "Text"]
+    },
+    technical: {
+      model_type: "Classifier",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["API"],
+    ratings: { overall: 4.2, ease_of_use: 4.3, features: 4.1, value: 4.2, support: 4.1, total_reviews: 0 },
+    pros: ["Simple", "API available"],
+    cons: ["False positives possible"],
+    best_for: ["Academic detection"],
+    launch_date: "2023-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "85",
+    name: "Galileo AI",
+    slug: "galileo-ai",
+    logo_url: "/placeholder.svg",
+    company: "Galileo",
+    tagline: "AI UI design from text prompts",
+    description: "Galileo AI generates UI mockups from text and iterates with structured feedback.",
+    category: ["UI/UX Design"],
+    website: "https://www.usegalileo.ai",
+    pricing: {
+      model: "Beta",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 0, billing: "tba", features: ["Waitlist"] },
+        { name: "Pro", price: 0, billing: "tba", features: ["TBA"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 5,
+      input_types: ["Text"],
+      output_formats: ["Images"]
+    },
+    technical: {
+      model_type: "Generative",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.3, ease_of_use: 4.2, features: 4.3, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["Rapid mockups"],
+    cons: ["Early product"] ,
+    best_for: ["UI mockups"],
+    launch_date: "2024-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "100",
+    name: "Gamma",
+    slug: "gamma",
+    logo_url: "/placeholder.svg",
+    company: "Gamma",
+    tagline: "Create AI-powered presentations quickly",
+    description: "Gamma builds decks and docs from prompts with templates, charts, and embeddable content.",
+    category: ["Presentation"],
+    website: "https://gamma.app",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 10, billing: "monthly", features: ["Basic AI credits"] },
+        { name: "Pro", price: 20, billing: "monthly", features: ["Branding", "Export"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 20,
+      input_types: ["Text"],
+      output_formats: ["Slides", "PDF"]
+    },
+    technical: {
+      model_type: "Generative",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["Notion", "Figma"],
+    ratings: { overall: 4.5, ease_of_use: 4.6, features: 4.4, value: 4.5, support: 4.4, total_reviews: 0 },
+    pros: ["Good templates"],
+    cons: ["Credit limits"],
+    best_for: ["AI presentations"],
+    launch_date: "2022-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "72",
+    name: "Hypotenuse AI",
+    slug: "hypotenuse-ai",
+    logo_url: "/placeholder.svg",
+    company: "Hypotenuse AI",
+    tagline: "Product description and ecommerce content at scale",
+    description: "Hypotenuse AI generates product copy and bulk content with brand tone controls.",
+    category: ["E-commerce"],
+    website: "https://www.hypotenuse.ai",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 15, billing: "monthly", features: ["Basic quota"] },
+        { name: "Pro", price: 59, billing: "monthly", features: ["Bulk generation"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: true,
+      languages_supported: 25,
+      input_types: ["Text", "CSV"],
+      output_formats: ["Text", "CSV"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["Shopify"],
+    ratings: { overall: 4.3, ease_of_use: 4.4, features: 4.2, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["Strong for ecommerce"],
+    cons: ["Template limits"],
+    best_for: ["Product descriptions"],
+    launch_date: "2021-06-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "97",
+    name: "Jasper Art",
+    slug: "jasper-art",
+    logo_url: "/placeholder.svg",
+    company: "Jasper AI",
+    tagline: "AI image generation add-on for Jasper",
+    description: "Jasper Art creates marketing-friendly images integrated with the Jasper copy platform.",
+    category: ["Image Generation"],
+    website: "https://www.jasper.ai/art",
+    pricing: {
+      model: "Add-on",
+      free_tier: { available: true, limits: "With Jasper" },
+      plans: [
+        { name: "Starter", price: 0, billing: "included", features: ["Included with Jasper"] },
+        { name: "Pro", price: 0, billing: "included", features: ["Included"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Images"]
+    },
+    technical: {
+      model_type: "Diffusion",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["Jasper"],
+    ratings: { overall: 4.3, ease_of_use: 4.4, features: 4.2, value: 4.2, support: 4.3, total_reviews: 0 },
+    pros: ["Integrated workflow"],
+    cons: ["Requires Jasper plan"],
+    best_for: ["Marketing images"],
+    launch_date: "2022-08-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "91",
+    name: "Julius AI",
+    slug: "julius-ai",
+    logo_url: "/placeholder.svg",
+    company: "Julius AI",
+    tagline: "Ask data questions and analyze files with AI",
+    description: "Julius AI analyzes spreadsheets and databases with natural language and produces charts and SQL.",
+    category: ["Data Analysis"],
+    website: "https://www.julius.ai",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 20, billing: "monthly", features: ["Basic limits"] },
+        { name: "Pro", price: 40, billing: "monthly", features: ["Higher limits"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["CSV", "XLSX"],
+      output_formats: ["Charts", "SQL"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["Google Drive"],
+    ratings: { overall: 4.4, ease_of_use: 4.5, features: 4.3, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["Quick insights"],
+    cons: ["File size limits"],
+    best_for: ["Data analysis"],
+    launch_date: "2023-05-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "83",
+    name: "Kaiber",
+    slug: "kaiber",
+    logo_url: "/placeholder.svg",
+    company: "Kaiber",
+    tagline: "Turn images and music into AI video art",
+    description: "Kaiber creates stylized music videos from images or text, popular for creative visualizers.",
+    category: ["Video Art"],
+    website: "https://www.kaiber.ai",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 5, billing: "monthly", features: ["Basic credits"] },
+        { name: "Pro", price: 15, billing: "monthly", features: ["More credits"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 5,
+      input_types: ["Text", "Images", "Audio"],
+      output_formats: ["Video"]
+    },
+    technical: {
+      model_type: "Video Gen",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.2, ease_of_use: 4.2, features: 4.1, value: 4.2, support: 4.1, total_reviews: 0 },
+    pros: ["Unique styles"],
+    cons: ["Artifacts at times"],
+    best_for: ["Music videos"],
+    launch_date: "2023-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "69",
+    name: "Lavender",
+    slug: "lavender",
+    logo_url: "/placeholder.svg",
+    company: "Lavender",
+    tagline: "AI email coach for sales teams",
+    description: "Lavender helps write and optimize sales emails with coaching and scoring.",
+    category: ["Email & Sales"],
+    website: "https://www.lavender.ai",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 29, billing: "monthly", features: ["Basic seats"] },
+        { name: "Pro", price: 49, billing: "monthly", features: ["Team features"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Text"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["Gmail", "Outlook"],
+    ratings: { overall: 4.6, ease_of_use: 4.6, features: 4.5, value: 4.5, support: 4.6, total_reviews: 0 },
+    pros: ["Great coaching"],
+    cons: ["Requires email access"],
+    best_for: ["Sales emails"],
+    launch_date: "2020-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "62",
+    name: "Lensa AI",
+    slug: "lensa-ai",
+    logo_url: "/placeholder.svg",
+    company: "Prisma Labs",
+    tagline: "AI avatars and photo editing",
+    description: "Lensa AI creates stylized avatars and includes a mobile photo editor.",
+    category: ["Image Editing"],
+    website: "https://prisma-ai.com/lensa",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Limited" },
+      plans: [
+        { name: "Starter", price: 4, billing: "weekly", features: ["Avatars pack"] },
+        { name: "Pro", price: 36, billing: "yearly", features: ["Full features"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 15,
+      input_types: ["Images"],
+      output_formats: ["Images"]
+    },
+    technical: {
+      model_type: "Diffusion",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["iOS", "Android"],
+    ratings: { overall: 4.2, ease_of_use: 4.3, features: 4.2, value: 4.1, support: 4.0, total_reviews: 0 },
+    pros: ["Fun avatars"],
+    cons: ["In-app purchases"],
+    best_for: ["AI avatars"],
+    launch_date: "2018-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "82",
+    name: "Lex",
+    slug: "lex",
+    logo_url: "/placeholder.svg",
+    company: "Every",
+    tagline: "Minimalist AI writing tool",
+    description: "Lex is a focused writing app with AI assistance for drafting and editing.",
+    category: ["Writing"],
+    website: "https://lex.page",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 10, billing: "monthly", features: ["Basic"] },
+        { name: "Pro", price: 10, billing: "monthly", features: ["Same pricing"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Text", "Markdown"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.3, ease_of_use: 4.5, features: 4.1, value: 4.2, support: 4.1, total_reviews: 0 },
+    pros: ["Distraction-free"],
+    cons: ["Limited features"],
+    best_for: ["Long-form writing"],
+    launch_date: "2022-09-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "90",
+    name: "Lightricks",
+    slug: "lightricks",
+    logo_url: "/placeholder.svg",
+    company: "Lightricks",
+    tagline: "Mobile photo and video editing apps",
+    description: "Lightricks offers popular apps like Facetune for portrait and video editing.",
+    category: ["Image Editing"],
+    website: "https://www.lightricks.com",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Limited" },
+      plans: [
+        { name: "Starter", price: 8, billing: "monthly", features: ["App subscription"] },
+        { name: "Pro", price: 60, billing: "yearly", features: ["Annual plan"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 20,
+      input_types: ["Images", "Video"],
+      output_formats: ["Images", "Video"]
+    },
+    technical: {
+      model_type: "Enhancement",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["iOS", "Android"],
+    ratings: { overall: 4.3, ease_of_use: 4.4, features: 4.3, value: 4.2, support: 4.1, total_reviews: 0 },
+    pros: ["Great mobile UX"],
+    cons: ["Subscriptions"],
+    best_for: ["Portrait editing"],
+    launch_date: "2013-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "75",
+    name: "MarketMuse",
+    slug: "marketmuse",
+    logo_url: "/placeholder.svg",
+    company: "MarketMuse",
+    tagline: "AI-driven content strategy and topic modeling",
+    description: "MarketMuse analyzes topics and content to guide strategy, briefs, and internal linking.",
+    category: ["SEO"],
+    website: "https://www.marketmuse.com",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Limited" },
+      plans: [
+        { name: "Starter", price: 149, billing: "monthly", features: ["Research"] },
+        { name: "Pro", price: 399, billing: "monthly", features: ["Content briefs"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Text", "CSV"]
+    },
+    technical: {
+      model_type: "NLP",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["Google Docs"],
+    ratings: { overall: 4.3, ease_of_use: 4.2, features: 4.4, value: 4.0, support: 4.2, total_reviews: 0 },
+    pros: ["Deep topic modeling"],
+    cons: ["Pricey"],
+    best_for: ["Content strategy"],
+    launch_date: "2015-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "98",
+    name: "Mem.ai",
+    slug: "mem-ai",
+    logo_url: "/placeholder.svg",
+    company: "Mem",
+    tagline: "AI-powered knowledge graph and note-taking",
+    description: "Mem.ai connects your notes and knowledge with AI retrieval and writing assistance.",
+    category: ["Knowledge Mgmt"],
+    website: "https://get.mem.ai",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 10, billing: "monthly", features: ["Personal"] },
+        { name: "Pro", price: 10, billing: "monthly", features: ["Same pricing"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text", "Docs"],
+      output_formats: ["Text"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["Google Drive", "Slack"],
+    ratings: { overall: 4.2, ease_of_use: 4.2, features: 4.2, value: 4.2, support: 4.1, total_reviews: 0 },
+    pros: ["Good retrieval"],
+    cons: ["Occasional sync lag"],
+    best_for: ["Knowledge graphs"],
+    launch_date: "2020-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "65",
+    name: "NovelAI",
+    slug: "novelai",
+    logo_url: "/placeholder.svg",
+    company: "Anlatan",
+    tagline: "AI storytelling and image generation for fiction",
+    description: "NovelAI provides AI-assisted creative writing and image generation tailored to storytelling.",
+    category: ["Creative Writing"],
+    website: "https://novelai.net",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 10, billing: "monthly", features: ["Basic tokens"] },
+        { name: "Pro", price: 25, billing: "monthly", features: ["More tokens"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 5,
+      input_types: ["Text"],
+      output_formats: ["Text", "Images"]
+    },
+    technical: {
+      model_type: "LLM + Diffusion",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.3, ease_of_use: 4.2, features: 4.4, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["Great for fiction"],
+    cons: ["NSFW constraints"],
+    best_for: ["Interactive stories"],
+    launch_date: "2021-10-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "89",
+    name: "OpenAI Playground",
+    slug: "openai-playground",
+    logo_url: "/placeholder.svg",
+    company: "OpenAI",
+    tagline: "Test OpenAI models in the browser",
+    description: "OpenAI Playground lets you experiment with prompts and parameters for GPT and other models.",
+    category: ["Developer Tools"],
+    website: "https://platform.openai.com/playground",
+    pricing: {
+      model: "Pay-per-use",
+      free_tier: { available: true, limits: "$5 credit" },
+      plans: [
+        { name: "Starter", price: 0, billing: "usage", features: ["Usage-based"] },
+        { name: "Pro", price: 0, billing: "usage", features: ["Usage-based"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: true,
+      languages_supported: 50,
+      input_types: ["Text", "Images"],
+      output_formats: ["Text", "Code", "JSON"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["SDK"],
+    ratings: { overall: 4.5, ease_of_use: 4.5, features: 4.6, value: 4.5, support: 4.4, total_reviews: 0 },
+    pros: ["Great for testing"],
+    cons: ["Usage costs"],
+    best_for: ["Testing models"],
+    launch_date: "2020-06-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "57",
+    name: "Opus Clip",
+    slug: "opus-clip",
+    logo_url: "/placeholder.svg",
+    company: "Opus Pro",
+    tagline: "Auto-repurpose long videos into short clips",
+    description: "Opus Clip uses AI to find highlights, add captions, and format viral clips.",
+    category: ["Video Editing"],
+    website: "https://www.opus.pro/opus-clip",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 9, billing: "monthly", features: ["Basic credits"] },
+        { name: "Pro", price: 29, billing: "monthly", features: ["More credits"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Video"],
+      output_formats: ["Video"]
+    },
+    technical: {
+      model_type: "Video AI",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["YouTube", "TikTok"],
+    ratings: { overall: 4.5, ease_of_use: 4.6, features: 4.4, value: 4.5, support: 4.3, total_reviews: 0 },
+    pros: ["Great captions"],
+    cons: ["Occasional misses"],
+    best_for: ["Video clips"],
+    launch_date: "2023-02-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "76",
+    name: "Originality.ai",
+    slug: "originality-ai",
+    logo_url: "/placeholder.svg",
+    company: "Originality.ai",
+    tagline: "AI detection and plagiarism scanning",
+    description: "Originality.ai provides AI and plagiarism detection with pay-per-use scanning and team controls.",
+    category: ["Content Detection"],
+    website: "https://originality.ai",
+    pricing: {
+      model: "Pay-per-use",
+      free_tier: { available: false, limits: "No" },
+      plans: [
+        { name: "Starter", price: 0.01, billing: "per_100_words", features: ["Usage-based"] },
+        { name: "Pro", price: 15, billing: "monthly", features: ["Team management"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 5,
+      input_types: ["Text"],
+      output_formats: ["JSON", "Text"]
+    },
+    technical: {
+      model_type: "Classifier",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["API"],
+    ratings: { overall: 4.4, ease_of_use: 4.3, features: 4.4, value: 4.4, support: 4.3, total_reviews: 0 },
+    pros: ["Accurate scanning"],
+    cons: ["Costs can add up"],
+    best_for: ["AI detection"],
+    launch_date: "2022-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "53",
+    name: "Phind",
+    slug: "phind",
+    logo_url: "/placeholder.svg",
+    company: "Phind",
+    tagline: "AI search engine for developers",
+    description: "Phind answers dev questions with code-aware search and an integrated AI assistant.",
+    category: ["Code Search"],
+    website: "https://www.phind.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 15, billing: "monthly", features: ["Faster model"] },
+        { name: "Pro", price: 15, billing: "monthly", features: ["Same pricing"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 20,
+      input_types: ["Text", "Code"],
+      output_formats: ["Text", "Code"]
+    },
+    technical: {
+      model_type: "LLM + Search",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.5, ease_of_use: 4.6, features: 4.5, value: 4.5, support: 4.4, total_reviews: 0 },
+    pros: ["Great for devs"],
+    cons: ["Premium model costs"],
+    best_for: ["Dev questions"],
+    launch_date: "2022-04-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "93",
+    name: "Reflect",
+    slug: "reflect",
+    logo_url: "/placeholder.svg",
+    company: "Reflect",
+    tagline: "Note-taking with backlinks and daily notes",
+    description: "Reflect is a fast, private notes app with backlinks and calendar integration.",
+    category: ["Note-taking"],
+    website: "https://reflect.app",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 10, billing: "monthly", features: ["Personal"] },
+        { name: "Pro", price: 10, billing: "monthly", features: ["Same pricing"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: true,
+      mobile_app: true,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Text", "Markdown"]
+    },
+    technical: {
+      model_type: "Productivity",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["Calendar"],
+    ratings: { overall: 4.4, ease_of_use: 4.5, features: 4.2, value: 4.4, support: 4.3, total_reviews: 0 },
+    pros: ["Fast", "Private"],
+    cons: ["Limited automation"],
+    best_for: ["Knowledge base"],
+    launch_date: "2020-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "63",
+    name: "Remini",
+    slug: "remini",
+    logo_url: "/placeholder.svg",
+    company: "Bending Spoons",
+    tagline: "AI photo restoration and enhancement",
+    description: "Remini restores old photos and enhances portraits with AI.",
+    category: ["Image Enhancement"],
+    website: "https://www.remini.ai",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Limited" },
+      plans: [
+        { name: "Starter", price: 5, billing: "weekly", features: ["Basic"] },
+        { name: "Pro", price: 30, billing: "yearly", features: ["Annual plan"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 15,
+      input_types: ["Images"],
+      output_formats: ["Images"]
+    },
+    technical: {
+      model_type: "Enhancement",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["iOS", "Android"],
+    ratings: { overall: 4.4, ease_of_use: 4.5, features: 4.4, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["Excellent upscaling"],
+    cons: ["Subscription upsell"],
+    best_for: ["Photo restoration"],
+    launch_date: "2019-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "67",
+    name: "Rephrase.ai",
+    slug: "rephrase-ai",
+    logo_url: "/placeholder.svg",
+    company: "Rephrase.ai",
+    tagline: "Personalized AI video at enterprise scale",
+    description: "Rephrase.ai generates personalized videos for sales and marketing with integrations and APIs.",
+    category: ["Video Generation"],
+    website: "https://www.rephrase.ai",
+    pricing: {
+      model: "Enterprise",
+      free_tier: { available: true, limits: "Demo" },
+      plans: [
+        { name: "Starter", price: 0, billing: "custom", features: ["POC"] },
+        { name: "Pro", price: 0, billing: "custom", features: ["Custom"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: true,
+      languages_supported: 20,
+      input_types: ["Text", "Images", "Video"],
+      output_formats: ["Video"]
+    },
+    technical: {
+      model_type: "Video Gen",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Enterprise",
+      uptime: "99.9%"
+    },
+    integrations: ["API"],
+    ratings: { overall: 4.2, ease_of_use: 4.1, features: 4.3, value: 4.1, support: 4.2, total_reviews: 0 },
+    pros: ["Scalable"],
+    cons: ["Enterprise sales"],
+    best_for: ["Video campaigns"],
+    launch_date: "2020-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "84",
+    name: "Replit AI",
+    slug: "replit-ai",
+    logo_url: "/placeholder.svg",
+    company: "Replit",
+    tagline: "AI coding assistance in Replit",
+    description: "Replit AI offers code completion, generation, and chat to speed up prototyping.",
+    category: ["Code Assistant"],
+    website: "https://replit.com/ai",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 20, billing: "monthly", features: ["Ghostwriter"] },
+        { name: "Pro", price: 20, billing: "monthly", features: ["Same pricing"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 30,
+      input_types: ["Code", "Text"],
+      output_formats: ["Code", "Text"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["Replit"],
+    ratings: { overall: 4.4, ease_of_use: 4.5, features: 4.4, value: 4.3, support: 4.3, total_reviews: 0 },
+    pros: ["Great for beginners"],
+    cons: ["Locked to Replit"],
+    best_for: ["Quick prototyping"],
+    launch_date: "2021-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "86",
+    name: "Scribe",
+    slug: "scribe",
+    logo_url: "/placeholder.svg",
+    company: "Scribe",
+    tagline: "Turn processes into step-by-step guides",
+    description: "Scribe captures workflows into shareable guides with screenshots automatically.",
+    category: ["Documentation"],
+    website: "https://scribehow.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 23, billing: "monthly", features: ["Core features"] },
+        { name: "Pro", price: 45, billing: "monthly", features: ["Teams"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Screenshots", "Text"],
+      output_formats: ["PDF", "HTML"]
+    },
+    technical: {
+      model_type: "Automation",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["Chrome"],
+    ratings: { overall: 4.7, ease_of_use: 4.8, features: 4.6, value: 4.6, support: 4.7, total_reviews: 0 },
+    pros: ["Very fast docs"],
+    cons: ["Sensitive data caution"],
+    best_for: ["Process docs"],
+    launch_date: "2021-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "81",
+    name: "Sembly AI",
+    slug: "sembly-ai",
+    logo_url: "/placeholder.svg",
+    company: "Sembly",
+    tagline: "AI meeting notes and insights",
+    description: "Sembly AI records meetings to produce transcripts, action items, and summaries.",
+    category: ["Meeting Assistant"],
+    website: "https://www.sembly.ai",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 10, billing: "monthly", features: ["Basic hours"] },
+        { name: "Pro", price: 20, billing: "monthly", features: ["Team features"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 40,
+      input_types: ["Audio", "Video"],
+      output_formats: ["Text", "JSON"]
+    },
+    technical: {
+      model_type: "ASR + LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["Zoom", "Teams"],
+    ratings: { overall: 4.4, ease_of_use: 4.5, features: 4.4, value: 4.4, support: 4.3, total_reviews: 0 },
+    pros: ["Accurate notes"],
+    cons: ["Permissions setup"],
+    best_for: ["Meeting insights"],
+    launch_date: "2020-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "70",
+    name: "Smartwriter",
+    slug: "smartwriter",
+    logo_url: "/placeholder.svg",
+    company: "Smartwriter",
+    tagline: "AI for cold email personalization",
+    description: "Smartwriter automates cold email personalization and outreach with AI.",
+    category: ["Email & Marketing"],
+    website: "https://www.smartwriter.ai",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 49, billing: "monthly", features: ["Basic credits"] },
+        { name: "Pro", price: 124, billing: "monthly", features: ["Higher credits"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Text"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["Gmail"],
+    ratings: { overall: 4.2, ease_of_use: 4.2, features: 4.2, value: 4.1, support: 4.1, total_reviews: 0 },
+    pros: ["Saves time"],
+    cons: ["Deliverability varies"],
+    best_for: ["Cold email"],
+    launch_date: "2021-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "56",
+    name: "Speechify",
+    slug: "speechify",
+    logo_url: "/placeholder.svg",
+    company: "Speechify",
+    tagline: "Listen to articles and PDFs with natural voices",
+    description: "Speechify converts text to speech with high-quality voices across devices.",
+    category: ["Text-to-Speech"],
+    website: "https://speechify.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 12, billing: "monthly", features: ["Basic voices"] },
+        { name: "Pro", price: 12, billing: "monthly", features: ["Same pricing"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: true,
+      mobile_app: true,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 30,
+      input_types: ["Text", "PDF"],
+      output_formats: ["Audio"]
+    },
+    technical: {
+      model_type: "TTS",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["Chrome", "iOS", "Android"],
+    ratings: { overall: 4.6, ease_of_use: 4.7, features: 4.5, value: 4.5, support: 4.6, total_reviews: 0 },
+    pros: ["Great voices"],
+    cons: ["Subscription model"],
+    best_for: ["Reading aloud"],
+    launch_date: "2017-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "64",
+    name: "Sudowrite",
+    slug: "sudowrite",
+    logo_url: "/placeholder.svg",
+    company: "Sudowrite",
+    tagline: "Creative writing assistant for authors",
+    description: "Sudowrite helps brainstorm, expand, and rewrite fiction with genre-aware prompts.",
+    category: ["Creative Writing"],
+    website: "https://www.sudowrite.com",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 19, billing: "monthly", features: ["Basic tokens"] },
+        { name: "Pro", price: 29, billing: "monthly", features: ["More tokens"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Text"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.5, ease_of_use: 4.6, features: 4.4, value: 4.4, support: 4.4, total_reviews: 0 },
+    pros: ["Author-focused"],
+    cons: ["Credit caps"],
+    best_for: ["Novel writing"],
+    launch_date: "2021-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "58",
+    name: "Suno AI",
+    slug: "suno-ai",
+    logo_url: "/placeholder.svg",
+    company: "Suno",
+    tagline: "Generate full songs from text prompts",
+    description: "Suno generates music with vocals and structure from prompts, with export options.",
+    category: ["Music"],
+    website: "https://suno.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 8, billing: "monthly", features: ["Basic credits"] },
+        { name: "Pro", price: 24, billing: "monthly", features: ["More credits"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Audio"]
+    },
+    technical: {
+      model_type: "Music Gen",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.4, ease_of_use: 4.4, features: 4.5, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["Great vocals"],
+    cons: ["Style limits"],
+    best_for: ["Music generation"],
+    launch_date: "2023-12-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "73",
+    name: "Surfer SEO",
+    slug: "surfer-seo",
+    logo_url: "/placeholder.svg",
+    company: "Surfer",
+    tagline: "Data-driven SEO optimization tools",
+    description: "Surfer SEO provides content editor and audit tools to optimize pages by SERP data.",
+    category: ["SEO"],
+    website: "https://surferseo.com",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: false, limits: "No" },
+      plans: [
+        { name: "Starter", price: 69, billing: "monthly", features: ["Content editor"] },
+        { name: "Pro", price: 149, billing: "monthly", features: ["Teams"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 15,
+      input_types: ["Text", "URL"],
+      output_formats: ["Text", "CSV"]
+    },
+    technical: {
+      model_type: "NLP",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["API"],
+    ratings: { overall: 4.5, ease_of_use: 4.5, features: 4.5, value: 4.4, support: 4.4, total_reviews: 0 },
+    pros: ["Actionable scores"],
+    cons: ["No free plan"],
+    best_for: ["SEO optimization"],
+    launch_date: "2017-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "80",
+    name: "Taskade",
+    slug: "taskade",
+    logo_url: "/placeholder.svg",
+    company: "Taskade",
+    tagline: "Collaborative tasks and docs with AI",
+    description: "Taskade is a team productivity workspace with tasks, docs, and AI assistance.",
+    category: ["Productivity"],
+    website: "https://www.taskade.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 4, billing: "monthly", features: ["Basic team"] },
+        { name: "Pro", price: 8, billing: "monthly", features: ["Workspace features"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: true,
+      mobile_app: true,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 20,
+      input_types: ["Text", "Tasks"],
+      output_formats: ["Text", "Markdown"]
+    },
+    technical: {
+      model_type: "Productivity",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["Slack", "Google Drive"],
+    ratings: { overall: 4.4, ease_of_use: 4.5, features: 4.4, value: 4.4, support: 4.3, total_reviews: 0 },
+    pros: ["Flexible"],
+    cons: ["Feature breadth learning"],
+    best_for: ["Team collaboration"],
+    launch_date: "2017-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "71",
+    name: "Tavus",
+    slug: "tavus",
+    logo_url: "/placeholder.svg",
+    company: "Tavus",
+    tagline: "Personalized AI video for sales and marketing",
+    description: "Tavus creates personalized talking head videos at scale with integrations and API.",
+    category: ["Video Generation"],
+    website: "https://www.tavus.io",
+    pricing: {
+      model: "Subscription",
+      free_tier: { available: false, limits: "No" },
+      plans: [
+        { name: "Starter", price: 109, billing: "monthly", features: ["Creator plan"] },
+        { name: "Pro", price: 0, billing: "custom", features: ["Enterprise"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: true,
+      languages_supported: 20,
+      input_types: ["Text", "Video"],
+      output_formats: ["Video"]
+    },
+    technical: {
+      model_type: "Video Gen",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Enterprise",
+      uptime: "99.9%"
+    },
+    integrations: ["HubSpot"],
+    ratings: { overall: 4.3, ease_of_use: 4.2, features: 4.3, value: 4.1, support: 4.4, total_reviews: 0 },
+    pros: ["High personalization"],
+    cons: ["Pricey"],
+    best_for: ["Sales videos"],
+    launch_date: "2021-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "96",
+    name: "Tidio",
+    slug: "tidio",
+    logo_url: "/placeholder.svg",
+    company: "Tidio",
+    tagline: "All-in-one customer support and chatbots",
+    description: "Tidio provides live chat and AI chatbots with integrations for ecommerce and SMBs.",
+    category: ["Customer Support"],
+    website: "https://www.tidio.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 29, billing: "monthly", features: ["Starter plan"] },
+        { name: "Pro", price: 749, billing: "monthly", features: ["Scaling plan"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 20,
+      input_types: ["Text"],
+      output_formats: ["Text"]
+    },
+    technical: {
+      model_type: "Chatbot",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["Shopify", "WooCommerce"],
+    ratings: { overall: 4.6, ease_of_use: 4.6, features: 4.5, value: 4.5, support: 4.6, total_reviews: 0 },
+    pros: ["Great for SMBs"],
+    cons: ["High-end plan costly"],
+    best_for: ["SMB support"],
+    launch_date: "2013-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "61",
+    name: "Topaz Labs",
+    slug: "topaz-labs",
+    logo_url: "/placeholder.svg",
+    company: "Topaz Labs",
+    tagline: "AI photo and video enhancement software",
+    description: "Topaz Labs offers apps like Photo AI and Video AI for upscaling and denoising.",
+    category: ["Image Enhancement"],
+    website: "https://www.topazlabs.com",
+    pricing: {
+      model: "One-time",
+      free_tier: { available: true, limits: "Trial" },
+      plans: [
+        { name: "Starter", price: 99, billing: "once", features: ["Single app"] },
+        { name: "Pro", price: 199, billing: "once", features: ["Bundle"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: true,
+      mobile_app: false,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Images", "Video"],
+      output_formats: ["Images", "Video"]
+    },
+    technical: {
+      model_type: "Enhancement",
+      processing: "Local/Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.6, ease_of_use: 4.5, features: 4.6, value: 4.5, support: 4.5, total_reviews: 0 },
+    pros: ["Excellent upscaling"],
+    cons: ["GPU required"],
+    best_for: ["Photo upscaling"],
+    launch_date: "2018-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "59",
+    name: "Udio",
+    slug: "udio",
+    logo_url: "/placeholder.svg",
+    company: "Udio",
+    tagline: "Generate music with lyrics and styles",
+    description: "Udio creates full songs and stems from prompts with collaborative editing.",
+    category: ["Music"],
+    website: "https://www.udio.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 10, billing: "monthly", features: ["Basic credits"] },
+        { name: "Pro", price: 30, billing: "monthly", features: ["More credits"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 10,
+      input_types: ["Text"],
+      output_formats: ["Audio"]
+    },
+    technical: {
+      model_type: "Music Gen",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.3, ease_of_use: 4.3, features: 4.3, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["Fun outputs"],
+    cons: ["Style limitations"],
+    best_for: ["Full songs"],
+    launch_date: "2024-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "68",
+    name: "Unscreen",
+    slug: "unscreen",
+    logo_url: "/placeholder.svg",
+    company: "Kaleido AI",
+    tagline: "Remove video backgrounds automatically",
+    description: "Unscreen removes video backgrounds with AI, offering downloads with transparent backgrounds.",
+    category: ["Video Editing"],
+    website: "https://www.unscreen.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 9, billing: "monthly", features: ["Basic credits"] },
+        { name: "Pro", price: 29, billing: "monthly", features: ["More credits"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: false,
+      custom_training: false,
+      languages_supported: 5,
+      input_types: ["Video"],
+      output_formats: ["Video", "GIF"]
+    },
+    technical: {
+      model_type: "Segmentation",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: ["API"],
+    ratings: { overall: 4.5, ease_of_use: 4.6, features: 4.4, value: 4.5, support: 4.3, total_reviews: 0 },
+    pros: ["Fast"],
+    cons: ["Edge artifacts"],
+    best_for: ["Background removal"],
+    launch_date: "2020-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "55",
+    name: "Writecream",
+    slug: "writecream",
+    logo_url: "/placeholder.svg",
+    company: "Writecream",
+    tagline: "Outreach emails and marketing copy with AI",
+    description: "Writecream generates cold emails, LinkedIn icebreakers, and marketing content.",
+    category: ["Marketing"],
+    website: "https://writecream.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 29, billing: "monthly", features: ["Basic credits"] },
+        { name: "Pro", price: 49, billing: "monthly", features: ["More credits"] }
+      ]
+    },
+    features: {
+      api_access: false,
+      offline_mode: false,
+      mobile_app: false,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 20,
+      input_types: ["Text"],
+      output_formats: ["Text"]
+    },
+    technical: {
+      model_type: "LLM",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "Standard",
+      uptime: "99.9%"
+    },
+    integrations: [],
+    ratings: { overall: 4.3, ease_of_use: 4.3, features: 4.2, value: 4.3, support: 4.2, total_reviews: 0 },
+    pros: ["Many templates"],
+    cons: ["Generic outputs"],
+    best_for: ["Cold emails"],
+    launch_date: "2020-01-01",
+    last_updated: "2025-10-07"
+  },
+  {
+    id: "54",
+    name: "You.com",
+    slug: "you-com",
+    logo_url: "/placeholder.svg",
+    company: "You.com",
+    tagline: "Private AI search and chat",
+    description: "You.com combines search with AI chat, offering privacy and customization.",
+    category: ["Search"],
+    website: "https://you.com",
+    pricing: {
+      model: "Freemium",
+      free_tier: { available: true, limits: "Yes" },
+      plans: [
+        { name: "Starter", price: 15, billing: "monthly", features: ["Pro chat"] },
+        { name: "Pro", price: 15, billing: "monthly", features: ["Same pricing"] }
+      ]
+    },
+    features: {
+      api_access: true,
+      offline_mode: false,
+      mobile_app: true,
+      team_collaboration: true,
+      custom_training: false,
+      languages_supported: 30,
+      input_types: ["Text"],
+      output_formats: ["Text", "Images"]
+    },
+    technical: {
+      model_type: "LLM + Search",
+      processing: "Cloud",
+      gdpr_compliant: true,
+      data_privacy: "High",
+      uptime: "99.9%"
+    },
+    integrations: ["API"],
+    ratings: { overall: 4.2, ease_of_use: 4.3, features: 4.2, value: 4.2, support: 4.1, total_reviews: 0 },
+    pros: ["Privacy focus"],
+    cons: ["Results vary"],
+    best_for: ["Private search"],
+    launch_date: "2021-01-01",
+    last_updated: "2025-10-07"
   }
 ];
 
