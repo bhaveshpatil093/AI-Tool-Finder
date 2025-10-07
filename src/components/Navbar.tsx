@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AuthModal } from "@/components/AuthModal";
 import { UserMenu } from "@/components/UserMenu";
@@ -10,6 +10,11 @@ import { Sparkles, Menu, LogIn } from "lucide-react";
 export const Navbar = () => {
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const { user } = useAuth();
+  const location = useLocation();
+
+  const linkClass = (path: string) => {
+    return `text-sm font-medium ${location.pathname === path ? 'text-foreground' : 'text-foreground/80 hover:text-foreground'} transition-colors`;
+  };
 
   return (
     <>
@@ -27,20 +32,13 @@ export const Navbar = () => {
               <span className="text-xs text-muted-foreground">by KAYAHA</span>
             </Link>
 
-            <div className="hidden md:flex items-center gap-6">
-              <Link to="/browse" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-                Browse Tools
-              </Link>
-              <Link to="/compare" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-                Compare
-              </Link>
-              <Link to="/recommendations" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-                Get Recommendations
-              </Link>
-              <Link to="/categories" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-                Categories
-              </Link>
-            </div>
+            <nav className="hidden md:flex items-center gap-4">
+              <Link to="/browse" className={linkClass("/browse")}>Browse</Link>
+              <Link to="/categories" className={linkClass("/categories")}>Categories</Link>
+              <Link to="/compare" className={linkClass("/compare")}>Compare</Link>
+              <Link to="/kayaha-map" className={linkClass("/kayaha-map")}>KAYAHA Map</Link>
+              <Link to="/submit" className="px-3 py-1.5 rounded-md bg-primary text-primary-foreground">Submit</Link>
+            </nav>
 
             <div className="flex items-center gap-3">
               <ThemeToggle />
