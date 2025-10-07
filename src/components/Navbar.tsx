@@ -57,9 +57,11 @@ export const Navbar = () => {
                   Sign In
                 </Button>
               )}
-              <Button size="sm" className="gradient-primary">
-                Submit Tool
-              </Button>
+                    <Link to="/submit">
+                      <Button size="sm" className="gradient-primary">
+                        Submit Tool
+                      </Button>
+                    </Link>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-5 w-5" />
               </Button>

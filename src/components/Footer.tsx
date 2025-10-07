@@ -39,25 +39,25 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Guides</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">API Docs</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Support</a></li>
-            </ul>
-          </div>
+                <div>
+                  <h3 className="font-semibold mb-4">Resources</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li><Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link></li>
+                    <li><Link to="/guides" className="text-muted-foreground hover:text-foreground transition-colors">Guides</Link></li>
+                    <li><Link to="/api-docs" className="text-muted-foreground hover:text-foreground transition-colors">API Docs</Link></li>
+                    <li><Link to="/support" className="text-muted-foreground hover:text-foreground transition-colors">Support</Link></li>
+                  </ul>
+                </div>
 
-          <div>
-            <h3 className="font-semibold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">About</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a></li>
-            </ul>
-          </div>
+                <div>
+                  <h3 className="font-semibold mb-4">Company</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li><Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</Link></li>
+                    <li><Link to="/privacy" className="text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</Link></li>
+                    <li><Link to="/terms" className="text-muted-foreground hover:text-foreground transition-colors">Terms of Service</Link></li>
+                    <li><Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</Link></li>
+                  </ul>
+                </div>
         </div>
 
         <div className="pt-8 border-t">
