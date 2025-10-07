@@ -115,6 +115,48 @@ const Index = () => {
         </div>
       </section>
 
+      {/* New: Curated picks carousel */}
+      <section className="py-12">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold">Editor’s Picks</h2>
+            <Link to="/recommendations" className="text-sm text-primary hover:underline">See all</Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Lightweight feature tiles without pulling full tools data */}
+            {["Claude Code", "Framer AI", "Gamma"].map((title, i) => (
+              <Card key={title} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <CardContent className="pt-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-semibold">{title}</h3>
+                    <Badge variant="secondary">Recommended</Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-4">Handpicked for great UX, value, and performance.</p>
+                  <Link to="/recommendations">
+                    <Button variant="outline" size="sm">
+                      Learn why
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* New: Trust signals strip */}
+      <section className="py-8 bg-muted/30 border-y">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-muted-foreground">
+            <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Curated database</div>
+            <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Transparent pricing</div>
+            <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> Real user feedback</div>
+            <div className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" /> No spam</div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="py-12 border-y bg-muted/30">
         <div className="container mx-auto px-4">

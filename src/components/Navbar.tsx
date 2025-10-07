@@ -36,6 +36,7 @@ export const Navbar = () => {
               <Link to="/browse" className={linkClass("/browse")}>Browse</Link>
               <Link to="/categories" className={linkClass("/categories")}>Categories</Link>
               <Link to="/compare" className={linkClass("/compare")}>Compare</Link>
+              <Link to="/recommendations" className={linkClass("/recommendations")}>Recommendations</Link>
               <Link to="/submit" className="px-3 py-1.5 rounded-md bg-primary text-primary-foreground">Submit</Link>
             </nav>
 
@@ -54,11 +55,11 @@ export const Navbar = () => {
                   Sign In
                 </Button>
               )}
-                    <Link to="/submit">
-                      <Button size="sm" className="gradient-primary">
-                        Submit Tool
-                      </Button>
-                    </Link>
+              <Link to="/submit">
+                <Button size="sm" className="gradient-primary">
+                  Submit Tool
+                </Button>
+              </Link>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-5 w-5" />
               </Button>
