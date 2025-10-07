@@ -3,6 +3,9 @@ import { tools } from "@/data/tools";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { MapContainer, TileLayer, Marker, Popup, Tooltip } from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 
 type HQ = { city?: string; country?: string; lat: number; lng: number };
 
@@ -112,6 +115,12 @@ const KAYAHAMap = () => {
     });
   }, [query, categoryFilter]);
 
+  // Relax types to avoid noisy prop type issues from react-leaflet typings mismatch
+  const AnyMapContainer = MapContainer as unknown as React.FC<any>;
+  const AnyTileLayer = TileLayer as unknown as React.FC<any>;
+  const AnyMarker = Marker as unknown as React.FC<any>;
+  const AnyTooltip = Tooltip as unknown as React.FC<any>;
+
   return (
     <div className="min-h-screen w-full p-4 md:p-8" style={{ background: "#0a0a0a" }}>
       <div className="mx-auto max-w-7xl">
@@ -140,54 +149,44 @@ const KAYAHAMap = () => {
           </div>
         </div>
 
-        {/* Simple world map background (SVG) */}
-        <div className="relative w-full rounded-lg overflow-hidden" style={{ height: 560, background: "radial-gradient(ellipse at center, #0f0f0f 0%, #000 100%)", boxShadow: "0 0 40px #00fff2 inset" }}>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg"
-            alt="World Map"
-            className="absolute inset-0 w-full h-full object-contain opacity-20"
-          />
-          {/* Neon markers */}
-          {filtered.map(t => {
-            const hq = toolHQBySlug[t.slug as keyof typeof toolHQBySlug];
-            if (!hq) return null;
-            const primaryCategory = t.category[0] || "Productivity";
-            const neon = categoryNeonColor[primaryCategory] || "#39ff14";
-
-            // Convert lat/lng to rough x/y for the SVG image positioning (equirectangular)
-            const x = ((hq.lng + 180) / 360) * 100; // percentage
-            const y = ((90 - hq.lat) / 180) * 100;   // percentage
-
-            return (
-              <div key={t.id} className="group absolute" style={{ left: `${x}%`, top: `${y}%`, transform: "translate(-50%, -50%)" }}>
-                <div
-                  className="w-3 h-3 rounded-full"
-                  style={{ backgroundColor: neon, boxShadow: `0 0 12px ${neon}, 0 0 24px ${neon}` }}
-                />
-                {/* Hover card */}
-                <div className="pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute -translate-x-1/2 -translate-y-full mt-2" style={{ left: "50%" }}>
-                  <Card className="w-72 bg-black/80 border border-white/20 backdrop-blur-xl">
-                    <CardHeader>
-                      <CardTitle className="text-white text-base" style={{ textShadow: `0 0 10px ${neon}` }}>
-                        {t.name}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="text-white/80 text-sm mb-2">{t.company}</div>
-                      <div className="flex flex-wrap gap-1 mb-2">
+        <div className="relative w-full rounded-lg overflow-hidden" style={{ height: 600, boxShadow: "0 0 40px #00fff2 inset" }}>
+          <AnyMapContainer center={[20, 0]} zoom={2} minZoom={2} scrollWheelZoom={true} style={{ height: "100%", width: "100%" }} className="contrast-125 saturate-125">
+            <AnyTileLayer
+              attribution='&copy; <a href="https://carto.com/attributions">CARTO</a>'
+              url="https://cartodb-basemaps-a.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png"
+            />
+            {filtered.map(t => {
+              const hq = toolHQBySlug[t.slug as keyof typeof toolHQBySlug];
+              if (!hq) return null;
+              const primaryCategory = t.category[0] || "Productivity";
+              const neon = categoryNeonColor[primaryCategory] || "#39ff14";
+              const icon = L.divIcon({
+                className: "neon-marker",
+                html: `<div style="width:10px;height:10px;border-radius:50%;background:${neon};box-shadow:0 0 10px ${neon},0 0 20px ${neon};border:1px solid ${neon}"></div>`,
+                iconSize: [12, 12],
+                iconAnchor: [6, 6]
+              });
+              return (
+                <AnyMarker key={t.id} position={[hq.lat, hq.lng]} icon={icon}>
+                  <AnyTooltip direction="top" offset={[0, -8]} opacity={1} permanent={false} className="bg-black/90">
+                    <span className="text-white" style={{ textShadow: `0 0 8px ${neon}` }}>{t.name}</span>
+                  </AnyTooltip>
+                  <Popup>
+                    <div className="w-64">
+                      <div className="font-semibold" style={{ color: neon }}>{t.name}</div>
+                      <div className="text-xs text-muted-foreground">{t.company}</div>
+                      <div className="mt-1 flex flex-wrap gap-1">
                         {t.category.map(c => (
                           <span key={c} className="px-2 py-0.5 rounded text-xs" style={{ color: "#000", background: categoryNeonColor[c] || "#39ff14", boxShadow: `0 0 10px ${categoryNeonColor[c] || "#39ff14"}` }}>{c}</span>
                         ))}
                       </div>
-                      <div className="text-white/70 text-xs">
-                        HQ: {hq.city ? `${hq.city}, ` : ""}{hq.country}
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-            );
-          })}
+                      <div className="mt-2 text-xs">HQ: {hq.city ? `${hq.city}, ` : ""}{hq.country}</div>
+                    </div>
+                  </Popup>
+                </AnyMarker>
+              );
+            })}
+          </AnyMapContainer>
         </div>
 
         {/* Legend */}
